@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern responsive calculator">
+    <title>Build a Calculator using with HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="script.js">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="page">
+
+        <section class="calculator">
+
+            <div class="calculator-header">
+                <div>
+                    <span class="mini-title">@CodeAlpha</span>
+                    <h1>Calculator</h1>
+                </div>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Active
+                </div>
+            </div>
+
+            <!-- Display -->
+            <div class="display">
+                <div class="previous-display" id="previousDisplay"></div>
+                <div class="current-display" id="currentDisplay">0</div>
+            </div>
+
+            <!-- Keyboard -->
+            <div class="keys">
+
+                <button class="key function" data-action="clear">AC</button>
+                <button class="key function" data-action="delete">DEL</button>
+                <button class="key function" data-action="percent">%</button>
+                <button class="key operator" data-operation="÷">÷</button>
+
+                <button class="key" data-number="7">7</button>
+                <button class="key" data-number="8">8</button>
+                <button class="key" data-number="9">9</button>
+                <button class="key operator" data-operation="×">×</button>
+
+                <button class="key" data-number="4">4</button>
+                <button class="key" data-number="5">5</button>
+                <button class="key" data-number="6">6</button>
+                <button class="key operator" data-operation="−">−</button>
+
+                <button class="key" data-number="1">1</button>
+                <button class="key" data-number="2">2</button>
+                <button class="key" data-number="3">3</button>
+                <button class="key operator" data-operation="+">+</button>
+
+                <button class="key zero" data-number="0">0</button>
+                <button class="key" data-number=".">.</button>
+                <button class="key equals" data-action="equals">=</button>
+
+            </div>
+
+            <div class="calculator-footer">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span class="keyboard-hint">Made By @Chetan</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
